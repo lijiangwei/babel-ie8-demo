@@ -1,14 +1,5 @@
-/**
- * Created by liaoyf on 2016/12/6 0006.
- */
-let React = require('react');
+// import "babel-polyfill";
+// import _ from 'lodash';
+import {test} from './print';
 
-class Demo extends React.Component{
-    render(){
-        return (
-            <div>Hello World</div>
-        );
-    }
-}
-
-export {Demo};
+test();

@@ -13,7 +13,7 @@ module.exports = {
             'es5-shim/es5-sham'
         ],
         app: [
-            './example/index.js'
+            './src/index.js'
         ]
     },
     output: {
@@ -26,12 +26,12 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel',
                 query: {
-                    presets: ["es2015", "react"]
+                    presets: ["es2015"]
                 },
                 plugins: [
                     "transform-es3-property-literals",
                     "transform-es3-member-expression-literals",
-                    "transform-es2015-modules-simple-commonjs"
+                    // "transform-es2015-modules-simple-commonjs"
                 ]
             },
             {
